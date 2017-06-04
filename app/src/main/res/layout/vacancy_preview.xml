@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:id="@+id/position_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"/>
+
+    <TextView
+        android:textAppearance="@android:style/TextAppearance.Holo.Small"
+        android:id="@+id/company_and_place_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/position_text_view"
+        android:layout_margin="@dimen/default_margin"/>
+
+    <TextView
+        android:textAppearance="@android:style/TextAppearance.Holo.Small"
+        android:id="@+id/salary_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/company_and_place_text_view"
+        android:layout_margin="@dimen/default_margin"/>
+
+    <TextView
+        android:textAppearance="@android:style/TextAppearance.Holo.Small"
+        android:id="@+id/add_date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/salary_text_view"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/default_margin" />
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_padding"
+    tools:activity="testapp.andrey.com.testapp.ui.VacancyFilterActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/keyword_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        app:errorTextAppearance="@style/TextAppearance.Design.Error">
+
+        <EditText
+            android:id="@+id/keyword_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/keyword"
+            android:inputType="textAutoComplete"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/min_salary_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/keyword_text_input_layout"
+        android:layout_margin="@dimen/default_margin"
+        app:errorTextAppearance="@style/TextAppearance.Design.Error">
+
+        <EditText
+            android:id="@+id/min_salary_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/min_salary"
+            android:inputType="number"
+            android:maxLength="7"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/other_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/other_params"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@+id/min_salary_text_input_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/other_params_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/other_button">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/limit_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            app:errorTextAppearance="@style/TextAppearance.Design.Error">
+
+            <EditText
+                android:id="@+id/limity_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/vacancy_limit"
+                android:inputType="number"
+                android:maxLength="3"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/period_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:entries="@array/periodSpinnerItems"
+            android:layout_below="@+id/limit_text_input_layout" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@+id/other_params_layout"/>
+
+</android.support.constraint.ConstraintLayout>

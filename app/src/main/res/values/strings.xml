@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="vacancy_search">Поиск вакансий</string>
+    <string name="search">Найти</string>
+    <string name="vacancy_list_label">Найдено вакансий:</string>
+    <string name="position">Должность</string>
+    <string name="salary">Зарплата</string>
+    <string name="min_salary">Минимальная зарплата</string>
+    <string name="keyword">Ключевое слово</string>
+    <string name="vacancy_limit">Максимальное количество записей</string>
+    <string name="other_params">Дополнительные параметры</string>
+    <string name="error">Ошибка при запросе вакансий</string>
+    <string name="add_date">Дата добавления:</string>
+    <string name="mod_date">Дата последнего обновления:</string>
+    <string name="city">Город:</string>
+    <string name="requirements">Требуемый опыт:</string>
+    <string name="workingType">Тип занятости:</string>
+
+    <string-array name="periodSpinnerItems">
+        <item>За все время</item>
+        <item>За сегодня</item>
+        <item>За 3 дня</item>
+        <item>За неделю</item>
+        <item>За месяц</item>
+    </string-array>
+</resources>
