@@ -9,15 +9,15 @@
         android:icon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.VacancyFilterActivity">
+        <activity android:name=".ui.VacancyFilterActivity" android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.VacancyListActivity" />
-        <activity android:name=".ui.VacancyActivity"></activity>
+        <activity android:name=".ui.VacancyListActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ui.VacancyActivity" android:screenOrientation="portrait" ></activity>
     </application>
 
 </manifest>
